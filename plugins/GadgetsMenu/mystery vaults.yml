@@ -1,0 +1,8 @@
+Mystery-Vaults:
+  Creative:
+    BlockFace: EAST
+    Location:
+      world: world_creative
+      x: 8.0
+      y: 154.0
+      z: -2.0

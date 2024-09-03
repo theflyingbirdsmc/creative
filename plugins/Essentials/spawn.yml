@@ -1,0 +1,9 @@
+spawns:
+  default:
+    world: 5ca3c765-399c-4db8-a243-bd2b17aea509
+    x: -4.576585967225118
+    y: 157.0
+    z: -7.476369827476239
+    yaw: -87.82022094726562
+    pitch: 4.987484931945801
+    world-name: world_creative
