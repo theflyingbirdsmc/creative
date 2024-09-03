@@ -48,6 +48,7 @@ worlds:
       min_height: -63
       border: false
       border_size: 1
+      component_below_bedrock: false
     event:
       spawn:
         egg: false

@@ -3,19 +3,19 @@ prefix: ''
 # SQLite section
 sqlite:
   # Should SQLite be used?
-  use: false
+  use: true
   # The file to use
   db: "storage"
 
 # MySQL section
 mysql:
   # Should MySQL be used?
-  use: true
-  host: "tfb-database-mariadb
+  use: false
+  host: "localhost"
   port: "3306"
-  user: "tfb_plotsquared"
-  password: "kBk4x@oQq8ehZ8jF*3mUn&3HMrBz@f"
-  database: "plotsquared"
-  # Set additional properties: https://goo.gl/wngtN8
+  user: "root"
+  password: "password"
+  database: "plot_db"
+  # Set additional properties: https://dev.mysql.com/doc/connector-j/en/connector-j-reference-configuration-properties.html
   properties: 
-  - "useSSL=true"
+  - "useSSL=false"

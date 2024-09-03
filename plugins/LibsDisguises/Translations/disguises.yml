@@ -550,3 +550,12 @@
 
 # Used for the disgiuse modify radius command to list all disguisetypes
 "DisgiseType": "DisgiseType"
+
+# Name for the BREEZE disguise
+"Breeze": "Breeze"
+
+# Name for the WIND_CHARGE disguise
+"Wind Charge": "Wind Charge"
+
+# Name for the WindCharge EntityType, this is used in radius commands
+"WindCharge": "WindCharge"

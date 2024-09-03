@@ -22,8 +22,6 @@ per-world:
     - world2 and world3
 tablist-name-formatting:
   enabled: true
-  align-tabsuffix-on-the-right: false
-  character-width-overrides: {}
   anti-override: true
   disable-condition: '%world%=disabledworld'
 scoreboard-teams:
@@ -49,15 +47,13 @@ scoreboard-teams:
     disable-condition: '%world%=disabledworld'
   can-see-friendly-invisibles: false
   disable-condition: '%world%=disabledworld'
-yellow-number-in-tablist:
-  enabled: true
-  value: '%ping%'
-  disable-condition: '%world%=disabledworld'
 belowname-objective:
   enabled: false
   number: '%health%'
   text: '&cHealth'
   disable-condition: '%world%=disabledworld'
+  fancy-display-default: NPC
+  fancy-display-players: '&c%health%'
 prevent-spectator-effect:
   enabled: false
 bossbar:
@@ -222,3 +218,11 @@ layout:
         players:
           slots:
           - 44-80
+permission-refresh-interval: 1000
+playerlist-objective:
+  enabled: true
+  value: '%ping%'
+  disable-condition: '%world%=disabledworld'
+  fancy-value: '&7Ping: %ping%'
+ping-spoof:
+  enabled: false
