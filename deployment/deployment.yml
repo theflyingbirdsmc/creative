@@ -6,12 +6,11 @@ metadata:
   labels:
     backstage.io/kubernetes-id: creative
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - name: creative
     port: 30101
     targetPort: 30101
-    nodePort: 30101
   selector:
     run: creative
 ---
