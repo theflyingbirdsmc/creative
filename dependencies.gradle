@@ -26,7 +26,7 @@ dependencies {
     // implementation 'Vulcan:Vulcan:2.7.5'
 
     // Server plugins
-    implementation 'Plugin:PlotSquared:7.3.10-Premium'
+    implementation 'Plugin:PlotSquared:7.3.12-Premium'
     // implementation 'PlotHider:PlotHider:6.0.1'
 
     //PlaceholderAPI Expansions
