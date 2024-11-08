@@ -1,7 +1,8 @@
 panels:
   tfb:
-    paneltype:
+    panelType:
     - nocommand
+    - static
     perm: tfb
     refresh-delay: 4
     rows: 6
@@ -9,6 +10,12 @@ panels:
     commands:
     - tfb
     - TFB
+    open-with-item:
+      material: COMPASS
+      stationary: 4
+      name: '#ee2b23T#3551d7F#00ff00B &eMenu &8(&7/tfb&8)'
+      commands:
+      - open= tfb
     item:
       '1':
         material: GRAY_STAINED_GLASS_PANE
@@ -75,82 +82,89 @@ panels:
         lore:
         - '%javascript_tfb_chats_lore,{luckperms_meta_tfb-language}%'
         commands:
-        - cp tfb_chats
-      # '12':
-      # material: RED_BANNER
-      # banner:
-      # - WHITE,HALF_HORIZONTAL
-      # - RED,STRIPE_TOP
-      # - RED,HALF_HORIZONTAL_MIRROR
-      # - RED,HALF_HORIZONTAL_MIRROR
-      # - WHITE,STRIPE_CENTER
-      # - WHITE,STRIPE_CENTER
-      # stack: 1
-      # name: '&4Danish &fServers'
-      # '14':
-      # material: BLUE_BANNER
-      # banner:
-      # - GREEN,GLOBE
-      # stack: 1
-      # name: '&2Global &fServers'
+        - open= tfb_chats
       '17':
         material: GRAY_STAINED_GLASS_PANE
         name: ' '
         stack: 1
+      # '20':
+      #   name: '&4Danish &fServers'
+      #   material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTBjMjMwNTVjMzkyNjA2ZjdlNTMxZGFhMjY3NmViZTJlMzQ4OTg4ODEwYzE1ZjE1ZGM1YjM3MzM5OTgyMzIifX19
+      #   stack: 1
+      # '24':
+      #   material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThhNzNjY2Y4ZGMxNWExNTlhMDZlZDdhNmMwNDI1ZTkzODliNDJhOWMyZmE2ZTMyZTk1ZDQ2MzU3YmIxNWFmOSJ9fX0=
+      #   stack: 1
+      #   name: '&2Global &fServers'
+      # '29':
+      #   material: GRASS_BLOCK
+      #   stack: 1
+      #   name: '%javascript_tfb_vanilladk_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30005%&8)'
+      #   lore:
+      #   - '&eOnline&7: &a%bungee_vanilladk%'
+      #   - '%javascript_tfb_vanilladk_lore,{luckperms_meta_tfb-language}%'
+      #   commands:
+      #   - server= vanilladk
       '29':
-        material: GRASS_BLOCK
+        material: CRAFTING_TABLE
         stack: 1
-        name: '%javascript_tfb_vanilladk_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_theflyingbirds.net:30005%&8)'
+        name: '%javascript_tfb_danish-survival_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_danish-survival:30005%&8)'
         lore:
-        - '&eOnline&7: &a%bungee_vanilladk%'
-        - '%javascript_tfb_vanilladk_lore,{luckperms_meta_tfb-language}%'
+        - '&eOnline&7: &a%bungee_danish-survival%'
+        - '%javascript_tfb_danish-survival_lore,{luckperms_meta_tfb-language}%'
         commands:
-        - server= vanilladk
-      '38':
-        material: DIRT
-        stack: 1
-        name: '%javascript_tfb_vanilladk_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_theflyingbirds.net:30006%&8)'
-        lore:
-        - '&eOnline&7: &a%bungee_vanilla_old%'
-        - '%javascript_tfb_vanilladk_lore,{luckperms_meta_tfb-language}%'
-        commands:
-        - server= vanilla_old
-      '30':
-        material: SLIME_BLOCK
-        stack: 1
-        name: '%javascript_tfb_parkoureu_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_theflyingbirds.net:30003%&8)'
-        lore:
-        - '&eOnline&7: &a%bungee_parkour%'
-        - '%javascript_tfb_parkoureu_lore,{luckperms_meta_tfb-language}%'
-        commands:
-        - server= parkour
+        - server= danish-survival
+      # '30':
+      #   material: SLIME_BLOCK
+      #   stack: 1
+      #   name: '%javascript_tfb_parkoureu_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30003%&8)'
+      #   lore:
+      #   - '&eOnline&7: &a%bungee_parkour%'
+      #   - '%javascript_tfb_parkoureu_lore,{luckperms_meta_tfb-language}%'
+      #   commands:
+      #   - server= parkour
       '31':
         material: END_CRYSTAL
         stack: 1
-        name: '%javascript_tfb_lobby_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_theflyingbirds.net:30001%&8)'
+        name: '%javascript_tfb_lobby_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_lobby:30001%&8)'
         lore:
         - '&eOnline&7: &a%bungee_lobby%'
         - '%javascript_tfb_lobby_lore,{luckperms_meta_tfb-language}%'
         commands:
         - server= lobby
-      '32':
+      '33':
         material: BEDROCK
         stack: 1
-        name: '%javascript_tfb_creativeeu_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_theflyingbirds.net:30002%&8)'
+        name: '&8Coming soon!'
         lore:
-        - '&eOnline&7: &a%bungee_creative%'
-        - '%javascript_tfb_creativeeu_lore,{luckperms_meta_tfb-language}%'
+        # - '&eOnline&7: &a%bungee_cs-tmm%'
+        # - '%javascript_tfb_cs-tmm_lore,{luckperms_meta_tfb-language}%'
         commands:
-        - server= creative
-      '33':
-        material: TNT
+        - server= cs-tmm
+      '49':
+        material: CAMPFIRE
         stack: 1
-        name: '%javascript_tfb_factionseu_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_theflyingbirds.net:30003%&8)'
+        name: '#ee2b23T#3551d7F#00ff00B &5Community Servers'
         lore:
-        - '&eOnline&7: &a%bungee_factions%'
-        - '%javascript_tfb_factionseu_lore,{luckperms_meta_tfb-language}%'
         commands:
-        - server= factions
+        - open= tfb_cs
+      # '32':
+      #   material: BEDROCK
+      #   stack: 1
+      #   name: '%javascript_tfb_creativeeu_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30002%&8)'
+      #   lore:
+      #   - '&eOnline&7: &a%bungee_creative%'
+      #   - '%javascript_tfb_creativeeu_lore,{luckperms_meta_tfb-language}%'
+      #   commands:
+      #   - server= creative
+      # '33':
+      #   material: TNT
+      #   stack: 1
+      #   name: '%javascript_tfb_factionseu_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30003%&8)'
+      #   lore:
+      #   - '&eOnline&7: &a%bungee_factions%'
+      #   - '%javascript_tfb_factionseu_lore,{luckperms_meta_tfb-language}%'
+      #   commands:
+      #   - server= factions
       '36':
         material: GRAY_STAINED_GLASS_PANE
         name: ' '

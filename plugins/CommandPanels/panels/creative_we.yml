@@ -11,7 +11,7 @@ panels:
         stack: 1
         name: '&cGo back'
         commands:
-        - cp creative
+        - open= creative
       '9':
         material: BARRIER
         stack: 1
@@ -43,4 +43,4 @@ panels:
         lore:
         - '&fType&7: &aSphere with percentages!'
         commands:
-        - cp creative_we_percentage
+        - open= creative_we_percentage

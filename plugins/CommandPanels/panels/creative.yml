@@ -19,5 +19,5 @@ panels:
         stack: 1
         name: §dWorldEdit Commands
         commands:
-        - cp creative_we
+        - open= creative_we
         

@@ -11,7 +11,7 @@ panels:
         stack: 1
         name: '&cGo back'
         commands:
-        - cp creative_we
+        - open= creative_we
       '1':
         material: LIME_WOOL
         stack: 1
