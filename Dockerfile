@@ -1,13 +1,5 @@
-FROM eclipse-temurin:17.0.9_9-jre-focal
-LABEL author="Lucas Christensen & Simon Fugl"
+FROM itzg/minecraft-server:java21
+LABEL author="Simon Fugl"
 
-COPY . /tfb/
-WORKDIR /tfb
-
-# ARG MEMORY
-# ENV MEMORY=$MEMORY
-
-EXPOSE 25565
-
-RUN chmod +x *.jar
-CMD  ["java", "-Xms128M", "-Xmx8192M", "-jar", "server.jar", "nogui"]
+# Copy server files to a server directory
+COPY . /data
